@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <title>Login</title>
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
     <main>
-        <form id="login-form">
-            <h2>Login</h2>
+        <h1>Login</h1>
+        <form action="submit_login" method="post" class="login-form">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            
-            <button type="submit">Login</button>
+            <button type="submit" class="login-button">Login</button>
         </form>
     </main>
-    <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
 </body>
 </html>

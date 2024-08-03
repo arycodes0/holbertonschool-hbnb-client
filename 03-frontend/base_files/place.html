@@ -3,27 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Details</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <title>Place Details</title>
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
     <main>
-        <section id="place-details">
-            <!-- Place details will be populated dynamically -->
-        </section>
-        <section id="reviews">
-            <!-- Reviews will be populated dynamically -->
-        </section>
-        <section id="add-review">
-            <h2>Add a Review</h2>
-            <form id="review-form">
-                <label for="review-text">Review:</label>
-                <textarea id="review-text" name="review-text" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+        <h1>Beautiful Beach House</h1>
+        <div class="place-details">
+            <div class="place-card">
+            <img src="Beach_front_apartment.jpg" alt="Beautiful Beach House" class="place-image-large">
+            <div class="place-info">
+                <h2>Wonderful Beach Front Apartment</h2>
+                <p><strong>Price per night:</strong> $180</p>
+                <p><strong>Location:</strong> Los Angeles, California, United States</p>
+                <p><strong>Host:</strong> Billie Eilish</p>
+                <p><strong>Description:</strong> Enjoy the beautiful colors of the sunset reflecting on the ocean...</p>
+                <p><strong>Amenities:</strong> Hot tub, Wi-Fi, Parking</p>
+            </div>
+        </div>
+        <h2>Reviews</h2>
+        <div class="review-list">
+            <div class="review-card">
+                <p><strong>Karen Blachi:</strong></p>
+                <p>Amazing place to stay!</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+            </div>
+            <div class="review-card">
+                <p><strong>Rob White:</strong></p>
+                <p>Great location, spectacular views!</p>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+        </div>
+        <a href="add_review.html" class="add-review">Add a Review</a>
     </main>
-    <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
 </body>
 </html>

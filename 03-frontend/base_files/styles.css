@@ -1,32 +1,247 @@
-/* 
-  This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
-  You'll probably need to override some of theese styles.
-*/
-
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 1rem;
+    display: flex; /* Add for footer positioning */
+    flex-direction: column; /* Add for footer positioning */
+    min-height: 100vh; /* Add for footer positioning */
 }
 
 main {
-    padding: 2rem;
+    padding: 20px;
+    text-align: center; /* Center align the main content */
+    flex: 1; /* Add for footer positioning */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFFF; /* White */
+    color: #333; /* Dark color for text to ensure contrast */
+}
+
+.logo {
+    height: 50px;
+}
+
+.login-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #444; /* Optional: Change the background color for better visibility */
+}
+
+nav ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+/* Center the 'Filter by country' title */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+main {
+    padding: 20px;
+     /* text-align: center; Align the main content */
+}
+
+/* Center the 'List of Places' title */
+h1 {
+    text-align: center;
+    font-weight: bold; /* Bold the main title */
+}
+
+label, select {
+    margin: 10px 0;
+    font-size: 16px;
+}
+/* Center the place details */
+.place-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* Center the place cards */
+.place-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px; /* Add margin to provide space between cards and footer */
+}
+
+.place-card {
+    background-color: #F2EBD3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 40px; /* Bigger content area */
+    width: 300px; /* Bigger cards*/
+    max-width: 800px; /* To limit card size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    text-align: center; /* Center text */
+}
+
+.place-card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.place-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.place-card p {
+    margin: 10px 0;
+    text-align: center;
+}
+.place-card button {
+    width: auto; /* Ensure auto width for proper alignment */
+    margin: 10px 0; /* Add margin for spacing */
+    text-align: center; /* Center the text */
+}
+
+.details-button {
+    background-color: #ff5733;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px; /* Add margin to the bottom to provide space between the button and the footer */
+}
+
+.login-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #ff5733;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.place-image-large {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.place-info {
+    max-width: 600px;
+}
+/* Center the 'Reviews' title and add margin for separation */
+h2.reviews-title {
+    text-align: center;
+    margin-top: 40px; /* Add margin at the top for spacing */
+    margin-left: 40px;
+}
+
+.review-list {
+    margin: 20px 0;
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow for visual separation */
+    width: calc(100% - 40%); /* Extending review card from left to right */
+    max-width: none; /* Remove max-width to allow full width */
+}
+
+.review-card p {
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.add-review {
+    display: inline-block;
+    background-color: #ff5733;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.medium-poppins {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
